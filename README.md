@@ -15,10 +15,6 @@ Usage as standalone run
 ```bat
 scp-password --password OpenSesame c:\hello.txt alibaba@192.168.0.1:/tmp
 ```
-or
-```bat
-scp-password -l alibaba --password OpenSesame -P 22 c:\hello.txt alibaba@192.168.0.1:/tmp
-```
 
 Specify connection timeout in seconds:
 ```bat
