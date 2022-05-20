@@ -5,6 +5,7 @@ no need to type password in keyboard,
 just put password as command-line argument to scp,
 suit for using in scripts.
 
+The recursive (-r) option is not supported yet.
 
 Usage as standalone run
 =======================
@@ -36,12 +37,23 @@ scp-password --help
 
 Usage as Java package
 =====================
-(Under construction...)
++ In Maven pom.xml:  
+See Packages page.
+
++ In Java code:
+```java
+import cn.nhcqc.sshex.SSHExecute;
+
+var config = new SSHExecute.Config ();
+//  set config field values
+int exit   = new SSHExecute ().run (config);
+```
 
 
 License
 ==============
 LGPL-2.1 (GNU Lesser General Public License).
+
 See file LICENSE for details.
 
 

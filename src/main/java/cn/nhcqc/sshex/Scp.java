@@ -20,10 +20,11 @@ import net.schmizz.sshj.transport.verification.FingerprintVerifier;
  */
 public class Scp {
 
-	private static class Location {
-		String     host;
-		String     username;
-		String     path;
+	//------------------------------------------------------------------------
+	public static class Location {
+		public String   host;
+		public String   username;
+		public String   path;
 
 		@Override
 		public String toString () {
@@ -32,12 +33,12 @@ public class Scp {
 				path;
 		}
 	}
-	private static class Config {
-		Location   from;
-		Location   to;
-		Integer    port             = PORT_DEFAULT;
-		String     password;
-		Integer    timeoutConnect   = 0;
+	public static class Config {
+		public Location from;
+		public Location to;
+		public Integer  port            = PORT_DEFAULT;
+		public String   password;
+		public Integer  timeoutConnect  = 0;
 
 		@Override
 		public String toString () {
@@ -48,6 +49,7 @@ public class Scp {
 		}
 	}
 
+	//------------------------------------------------------------------------
 	final static int PORT_MIN = 1, PORT_MAX = 0xFFFF, PORT_DEFAULT = 22, MS_SEC = 1000;
 	final static PrintStream STDOUT = System.out, STDERR = System.err;
 	final static private Logger logger = LoggerFactory.getLogger (Scp.class);
