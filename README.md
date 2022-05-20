@@ -42,11 +42,11 @@ See Packages page.
 
 + In Java code:
 ```java
-import cn.nhcqc.sshex.SSHExecute;
+import cn.nhcqc.sshex.Scp;
 
-var config = new SSHExecute.Config ();
+var config = new Scp.Config ();
 //  set config field values
-int exit   = new SSHExecute ().run (config);
+new Scp ().run (config);
 ```
 
 
