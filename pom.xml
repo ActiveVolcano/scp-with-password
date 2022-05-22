@@ -5,7 +5,7 @@
 
 	<groupId>cn.nhcqc.sshex</groupId>
 	<artifactId>scp-with-password</artifactId>
-	<version>0.1.220517</version>
+	<version>0.1.220521</version>
 	<packaging>jar</packaging>
 
 	<name>SCP with password</name>
@@ -39,7 +39,6 @@
 				</executions>
 			</plugin>
 			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-source-plugin</artifactId>
 				<version>3.2.1</version>
 				<executions>

@@ -6,4 +6,4 @@ if defined JAVA_HOME (
 ) else (
 	set JAVA=java
 )
-"%JAVA%" --class-path lib\* -Djava.util.logging.config.file=java.util.logging.config Scp.java %*
+"%JAVA%" --class-path lib\* -Djava.util.logging.config.file=java.util.logging.ini Scp.java %*
