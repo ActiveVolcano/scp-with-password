@@ -99,7 +99,6 @@ public class Scp {
 		try {
 			logger.trace ("connect: {}:{} timeout: {} sec.", host, config.port, config.timeoutConnect);
 			setSSHtimeout (ssh, config);
-			ssh.loadKnownHosts ();
 			ssh.connect (host, config.port);
 			return ssh;
 		} catch (TransportException e) {
