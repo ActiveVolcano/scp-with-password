@@ -5,6 +5,9 @@ no need to type password in keyboard,
 just put password as command-line argument to scp,
 suit for using in scripts.
 
+Written in Java,
+Run under both Windows and Linux.
+
 The recursive (-r) option is not supported yet.
 
 Usage as standalone run
